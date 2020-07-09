@@ -1,0 +1,9 @@
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\bin\Debug\netstandard2.1\IMVUCal3DLib.deps.json
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\bin\Debug\netstandard2.1\IMVUCal3DLib.dll
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\bin\Debug\netstandard2.1\IMVUCal3DLib.pdb
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\obj\Debug\netstandard2.1\IMVUCal3DLib.csprojAssemblyReference.cache
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\obj\Debug\netstandard2.1\IMVUCal3DLib.AssemblyInfoInputs.cache
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\obj\Debug\netstandard2.1\IMVUCal3DLib.AssemblyInfo.cs
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\obj\Debug\netstandard2.1\IMVUCal3DLib.csproj.CoreCompileInputs.cache
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\obj\Debug\netstandard2.1\IMVUCal3DLib.dll
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3dLib\obj\Debug\netstandard2.1\IMVUCal3DLib.pdb

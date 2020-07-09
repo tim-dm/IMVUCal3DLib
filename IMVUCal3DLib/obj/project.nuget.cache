@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bGRw0z1Gl+PpE3gKNgaxu9s5f8nfKxXlQIWHVck1+n1IvCfFs6gfq/PGfleSHPf1aCzpJ8S5BHTVOddEUr0U/g==",
+  "success": true,
+  "projectFilePath": "E:\\dev\\code\\dotnet\\c#\\vs solutions\\.net framework\\libraries\\imvu\\IMVUCal3DLib\\IMVUCal3DLib\\IMVUCal3DLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

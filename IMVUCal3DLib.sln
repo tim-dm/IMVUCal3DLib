@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMVUCal3DLib", "IMVUCal3DLib\IMVUCal3DLib.csproj", "{2E1B60FA-7BC4-4527-9C6A-044462AFE9F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibTest", "LibTest\LibTest.csproj", "{3CD77DD4-C2E2-4A33-8518-C788BF632FEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E1B60FA-7BC4-4527-9C6A-044462AFE9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1B60FA-7BC4-4527-9C6A-044462AFE9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1B60FA-7BC4-4527-9C6A-044462AFE9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1B60FA-7BC4-4527-9C6A-044462AFE9F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD77DD4-C2E2-4A33-8518-C788BF632FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD77DD4-C2E2-4A33-8518-C788BF632FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD77DD4-C2E2-4A33-8518-C788BF632FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD77DD4-C2E2-4A33-8518-C788BF632FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C45E1C7-948F-44E1-A9CA-C6D841D713F9}
+	EndGlobalSection
+EndGlobal

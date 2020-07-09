@@ -1,0 +1,13 @@
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\bin\Debug\LibTest.exe.config
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\bin\Debug\LibTest.exe
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\bin\Debug\LibTest.pdb
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\bin\Debug\IMVUCal3DLib.dll
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\bin\Debug\IMVUCal3DLib.pdb
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\obj\Debug\LibTest.csprojAssemblyReference.cache
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\obj\Debug\LibTest.Form1.resources
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\obj\Debug\LibTest.Properties.Resources.resources
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\obj\Debug\LibTest.csproj.GenerateResource.cache
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\obj\Debug\LibTest.csproj.CoreCompileInputs.cache
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\obj\Debug\LibTest.csproj.CopyComplete
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\obj\Debug\LibTest.exe
+E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\LibTest\obj\Debug\LibTest.pdb
