@@ -1,2 +1,2 @@
 # IMVUCal3DLib
- A library for parsing and manipulating IMVU Cal3D files
+ A simple C# library for reading and manipulating the xml inside of IMVU Cal3D files (xpf, xmf, xsf, etc..)
