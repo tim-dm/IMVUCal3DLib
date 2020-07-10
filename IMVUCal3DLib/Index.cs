@@ -127,9 +127,7 @@ namespace IMVUCal3DLib
 
                             //If the int converted successfully
                             if (index != -1)
-                            {
                                 nodeIndexs.Add(index);
-                            }
                         }
                     }
                 }
