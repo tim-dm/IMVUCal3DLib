@@ -38,7 +38,7 @@ namespace IMVUCal3DLib
         /// Grabs a submesh with a matching material
         /// </summary>
         /// <param name="materialId">The material attritube value</param>
-        /// <returns></returns>
+        /// <returns>A submesh node</returns>
         public XElement GetSubmeshByMaterialId(string materialId)
         {
             return GetSubmeshes().Where(s => s.Attribute(Common.FormatCasing(Document, "material")).Value.Equals(materialId)).SingleOrDefault();
