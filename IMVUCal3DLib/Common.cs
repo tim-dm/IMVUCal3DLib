@@ -33,6 +33,12 @@ namespace IMVUCal3DLib
             }            
         }
 
+        /// <summary>
+        /// Grabs nodes from the document by their name
+        /// </summary>
+        /// <param name="xDoc">The xml document to search</param>
+        /// <param name="nodeName">The name of the node to find</param>
+        /// <returns>A collection of nodes</returns>
         public static List<XElement> GetNodesByName(XDocument xDoc, string nodeName)
         {
             List<XElement> nodes = new List<XElement>();
@@ -53,7 +59,7 @@ namespace IMVUCal3DLib
         /// <summary>
         /// Formats the casing of the target to match the xml's header
         /// </summary>
-        /// <param name="xml">The xml code to use as a reference</param>
+        /// <param name="xDoc">The xml document to use as a reference</param>
         /// <param name="toConvert">The string to convert</param>
         /// <returns>A converted string</returns>
         public static string FormatCasing(XDocument xDoc, string toConvert)
