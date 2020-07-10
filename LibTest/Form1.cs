@@ -33,16 +33,9 @@ namespace LibTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Index index = new Index(richTextBox1.Text);
+            Index index = new Index(richTextBox1.Text);                       
 
-            List<XElement> values = index.GetMeshNodes();
-
-            foreach (XElement value in values)
-            {
-                richTextBox2.AppendText(value.ToString() + Environment.NewLine);
-            }
-
-            //richTextBox2.Text = value.ToString();
+            richTextBox2.Text = index.GetParentProductId();
         }
     }
 }

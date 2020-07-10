@@ -159,6 +159,23 @@ namespace IMVUCal3DLib
             return buffer;
         }
 
+        /// <summary>
+        /// Returns the product it of the parent from the dataimpoty tag
+        /// </summary>
+        /// <returns></returns>
+        public string GetParentProductId()
+        {
+            XElement importNode = Common.GetNodesByName(Document, "__DATAIMPORT", true).SingleOrDefault();
 
+            if (importNode == null)
+                return "";
+
+            string importValue = importNode.Value;
+
+            if (string.IsNullOrEmpty(importValue))
+                return "";
+
+            return importValue.Replace("product://", "").Replace("/index.xml", "");
+        }
     }
 }
