@@ -29,15 +29,19 @@ namespace IMVUCal3DLib
         /// Grabs all of the submeshes from a mesh file
         /// </summary>
         /// <returns>A collection of morph nodes</returns>
-        public List<XElement> GetSubmeshes(string meshXML)
+        public List<XElement> GetSubmeshes()
         {
             return Common.GetNodesByName(Document, "submesh");
         }
 
-        
-        public static XElement GetSubmeshById(string submeshId)
+        /// <summary>
+        /// Grabs a submesh with a matching material
+        /// </summary>
+        /// <param name="materialId">The material attritube value</param>
+        /// <returns></returns>
+        public XElement GetSubmeshByMaterialId(string materialId)
         {
-
+            return GetSubmeshes().Where(s => s.Attribute(Common.FormatCasing(Document, "material")).Value.Equals(materialId)).SingleOrDefault();
         }
 
 
