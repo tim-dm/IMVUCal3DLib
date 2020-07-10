@@ -165,7 +165,7 @@ namespace IMVUCal3DLib
         /// <returns></returns>
         public string GetParentProductId()
         {
-            XElement importNode = Common.GetNodesByName(Document, "__DATAIMPORT", true).SingleOrDefault();
+            XElement importNode = Common.GetNodesByName(Document, "__DATAIMPORT", true).FirstOrDefault();
 
             if (importNode == null)
                 return "";

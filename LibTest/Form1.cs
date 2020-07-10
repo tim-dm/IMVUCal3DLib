@@ -33,9 +33,9 @@ namespace LibTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Index index = new Index(richTextBox1.Text);                       
+            Material material = new Material(richTextBox1.Text);                       
 
-            richTextBox2.Text = index.GetParentProductId();
+            richTextBox2.Text = material.GetMapTextureName();
         }
     }
 }
