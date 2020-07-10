@@ -35,15 +35,14 @@ namespace LibTest
         {
             Index index = new Index(richTextBox1.Text);
 
-            var values = index.GetMeshNodes();
+            List<XElement> values = index.GetMeshNodes();
 
-            foreach (var value in values)
+            foreach (XElement value in values)
             {
                 richTextBox2.AppendText(value.ToString() + Environment.NewLine);
             }
 
             //richTextBox2.Text = value.ToString();
-
         }
     }
 }
