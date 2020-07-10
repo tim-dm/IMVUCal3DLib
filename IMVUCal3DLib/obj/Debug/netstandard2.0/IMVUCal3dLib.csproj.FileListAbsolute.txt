@@ -6,4 +6,3 @@ E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IM
 E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3DLib\obj\Debug\netstandard2.0\IMVUCal3DLib.csproj.CoreCompileInputs.cache
 E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3DLib\obj\Debug\netstandard2.0\IMVUCal3DLib.dll
 E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3dLib\IMVUCal3DLib\obj\Debug\netstandard2.0\IMVUCal3DLib.pdb
-E:\dev\code\dotnet\c#\vs solutions\.net framework\libraries\imvu\IMVUCal3DLib\IMVUCal3DLib\obj\Debug\netstandard2.0\IMVUCal3DLib.csprojAssemblyReference.cache

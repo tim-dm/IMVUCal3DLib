@@ -21,7 +21,7 @@ namespace IMVUCal3DLib
         /// <returns></returns>
         public List<XElement> GetBones()
         {
-            return Common.GetNodesByName(Document, "bone");
+            return Common.GetNodesByName(Document, "bone", true);
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace IMVUCal3DLib
         /// <returns>A collection of childid nodes</returns>
         public List<XElement> GetChildIds()
         {
-            return Common.GetNodesByName(Document, "childid");
+            return Common.GetNodesByName(Document, "childid", true);
         }
 
         /// <summary>

@@ -22,7 +22,7 @@ namespace IMVUCal3DLib
         // <returns>A collection of morph nodes</returns>
         public List<XElement> GetMorphs()
         {
-            return Common.GetNodesByName(Document, "morph");
+            return Common.GetNodesByName(Document, "morph", true);
         }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace IMVUCal3DLib
         /// <returns>A collection of morph nodes</returns>
         public List<XElement> GetSubmeshes()
         {
-            return Common.GetNodesByName(Document, "submesh");
+            return Common.GetNodesByName(Document, "submesh", true);
         }
 
         /// <summary>

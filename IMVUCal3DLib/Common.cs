@@ -38,8 +38,9 @@ namespace IMVUCal3DLib
         /// </summary>
         /// <param name="xDoc">The xml document to search</param>
         /// <param name="nodeName">The name of the node to find</param>
+        /// <param name="strict">If true search for exact value. If false allow partial matches</param>
         /// <returns>A collection of nodes</returns>
-        public static List<XElement> GetNodesByName(XDocument xDoc, string nodeName)
+        public static List<XElement> GetNodesByName(XDocument xDoc, string nodeName, bool strict)
         {
             List<XElement> nodes = new List<XElement>();
 
@@ -47,9 +48,12 @@ namespace IMVUCal3DLib
                 return nodes;
 
             var comparison = StringComparison.InvariantCultureIgnoreCase;
-            var elements =
-                  xDoc.Descendants()
-                     .Where(x => x.Name.LocalName.IndexOf(nodeName, comparison) != -1);
+            IEnumerable<XElement> elements;
+
+            if(strict)
+                elements = xDoc.Descendants().Where(x => x.Name.LocalName.Equals(nodeName , comparison));
+            else
+                elements = xDoc.Descendants().Where(x => x.Name.LocalName.IndexOf(nodeName, comparison) != -1);
 
             nodes = elements.ToList();
 
@@ -64,7 +68,7 @@ namespace IMVUCal3DLib
         /// <returns>A converted string</returns>
         public static string FormatCasing(XDocument xDoc, string toConvert)
         {
-            XElement headerNode = GetNodesByName(xDoc, "header").FirstOrDefault();
+            XElement headerNode = GetNodesByName(xDoc, "header", false).FirstOrDefault();
 
             if (headerNode != null)
             {
@@ -83,7 +87,7 @@ namespace IMVUCal3DLib
             }
             else
             {
-                XElement templateNode = GetNodesByName(xDoc, "template").FirstOrDefault();
+                XElement templateNode = GetNodesByName(xDoc, "template", false).FirstOrDefault();
 
                 if (templateNode.Name.LocalName == "TEMPLATE")
                     return toConvert.ToUpper();

@@ -17,14 +17,32 @@ namespace IMVUCal3DLib
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public List<XElement> GetMeshNodes()
+        {
+            List<XElement> nodes = new List<XElement>();
+
+            var comparison = StringComparison.InvariantCultureIgnoreCase;
+            var elements =
+                  Document.Descendants()
+                     .Where(x => x.Name.LocalName.IndexOf("mesh", comparison) != -1 && x.Name.LocalName.IndexOf("model", comparison) == -1);
+
+            nodes = elements.ToList();
+
+            return nodes;
+        }
+
+        /// <summary>
         /// Grabs the last mesh node in an index document
         /// </summary>
         /// <returns>The last XElement in the xml with the name mesh</returns>
         public XElement GetLastMeshNode()
         {
-            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh");
+            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh", true);
 
-            if (meshNodes == null)
+            if (meshNodes == null || meshNodes.Count() == 0)
                 return null;
 
             return meshNodes.Last();
@@ -36,7 +54,7 @@ namespace IMVUCal3DLib
         /// <returns>The largest mesh id</returns>
         public string GetLargestMeshID()
         {
-            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh");
+            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh", true);
 
             if (meshNodes == null)
                 return null;
@@ -81,7 +99,7 @@ namespace IMVUCal3DLib
         /// <returns>The largest mesh index value</returns>
         public string GetLargestMeshIndex()
         {
-            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh");
+            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh", true);
 
             if (meshNodes == null)
                 return null;
@@ -122,6 +140,26 @@ namespace IMVUCal3DLib
             }
         }
 
+        /// <summary>
+        /// Grabs all of the asset names from the index
+        /// </summary>
+        /// <returns>A collection of asset names</returns>
+        public List<string> GetMeshAssets()
+        {
+            List<string> buffer = new List<string>();
+
+            IEnumerable<XElement> assetNodes = Common.GetNodesByName(Document, "asset", true);
+
+            foreach(var asset in assetNodes)
+            {
+                var assetName = asset.Value;
+
+                if (!string.IsNullOrEmpty(assetName))
+                    buffer.Add(assetName);
+            }
+
+            return buffer;
+        }
 
 
     }

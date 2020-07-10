@@ -33,19 +33,16 @@ namespace LibTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Skeleton skeleton = new Skeleton(richTextBox1.Text);
+            Index index = new Index(richTextBox1.Text);
 
-            //List<XElement> bones = skeleton.GetBones();
+            var values = index.GetMeshNodes();
 
-            //foreach(var bone in bones)
-            //{
-            //    MessageBox.Show(bone.Document.ToString());
-            //}
+            foreach (var value in values)
+            {
+                richTextBox2.AppendText(value.ToString() + Environment.NewLine);
+            }
 
-
-            skeleton.RemoveBoneWithId("3");
-
-            richTextBox2.Text = skeleton.Document.ToString();
+            //richTextBox2.Text = value.ToString();
 
         }
     }
