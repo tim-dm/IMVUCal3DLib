@@ -7,16 +7,22 @@ using System.Xml;
 using System.Xml.Linq;
 namespace IMVUCal3DLib
 {
-    public static class Index
+    public class Index
     {
+        public XDocument Document { get; private set; }
+
+        public Index(string indexXML)
+        {
+            Document = Common.ConvertToXmlDocument(indexXML);
+        }
+
         /// <summary>
         /// Grabs the last mesh node in an index document
         /// </summary>
-        /// <param name="indexXML">The xml code of the index file</param>
         /// <returns>The last XElement in the xml with the name mesh</returns>
-        public static XElement GetLastMeshNode(string indexXML)
+        public XElement GetLastMeshNode()
         {
-            IEnumerable<XElement> meshNodes = Utilities.GetNodesByName(indexXML, "mesh");
+            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh");
 
             if (meshNodes == null)
                 return null;
@@ -27,11 +33,10 @@ namespace IMVUCal3DLib
         /// <summary>
         /// Grabs the ids of all the mesh nodes, sorts them and returns the highest value
         /// </summary>
-        /// <param name="indexXML">The xml code of the index file</param>
         /// <returns>The largest mesh id</returns>
-        public static string GetLargestMeshID(string indexXML)
+        public string GetLargestMeshID()
         {
-            IEnumerable<XElement> meshNodes = Utilities.GetNodesByName(indexXML, "mesh");
+            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh");
 
             if (meshNodes == null)
                 return null;
@@ -73,11 +78,10 @@ namespace IMVUCal3DLib
         /// <summary>
         /// Grabs all of the mesh nodes and their corrosponding index nodes, sorting their values and returing the highest one
         /// </summary>
-        /// <param name="indexXML">The xml code of the index file</param>
         /// <returns>The largest mesh index value</returns>
-        public static string GetLargestMeshIndex(string indexXML)
+        public string GetLargestMeshIndex()
         {
-            IEnumerable<XElement> meshNodes = Utilities.GetNodesByName(indexXML, "mesh");
+            IEnumerable<XElement> meshNodes = Common.GetNodesByName(Document, "mesh");
 
             if (meshNodes == null)
                 return null;
@@ -118,13 +122,6 @@ namespace IMVUCal3DLib
             }
         }
 
-
-
-
-
-
-
-        
 
 
     }

@@ -31,33 +31,22 @@ namespace LibTest
             }
         }
 
-        private void btnIndexDisplayNodesByName_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(richTextBox1.Text) || string.IsNullOrEmpty(textBox1.Text))
-                return;
+            Skeleton skeleton = new Skeleton(richTextBox1.Text);
 
-            richTextBox2.Clear();
+            //List<XElement> bones = skeleton.GetBones();
 
-            List<XElement> nodes = Utilities.GetNodesByName(richTextBox1.Text, textBox1.Text);
+            //foreach(var bone in bones)
+            //{
+            //    MessageBox.Show(bone.Document.ToString());
+            //}
 
-            foreach(XElement node in nodes)
-            {
-                richTextBox2.AppendText(node.ToString() + Environment.NewLine);
-            }
-        }
 
-        private void btnIndexLastMeshNodeIndex_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(richTextBox1.Text))
-                return;
+            skeleton.RemoveBoneWithId("3");
 
-            richTextBox2.Clear();
+            richTextBox2.Text = skeleton.Document.ToString();
 
-            string lastIndex = Index.GetLargestMeshIndex(richTextBox1.Text);
-            string lastID = Index.GetLargestMeshID(richTextBox1.Text);
-
-            richTextBox2.Text = lastIndex + Environment.NewLine;
-            richTextBox2.AppendText(lastID);
         }
     }
 }
