@@ -37,10 +37,7 @@ namespace IMVUCal3DLib
         {
             List<XElement> nodes = new List<XElement>();
 
-            if (string.IsNullOrEmpty(nodeName))
-                return nodes;
-
-            if (xDoc == null)
+            if (string.IsNullOrEmpty(nodeName) || xDoc == null)
                 return nodes;
 
             var comparison = StringComparison.InvariantCultureIgnoreCase;
