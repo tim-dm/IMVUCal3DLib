@@ -33,9 +33,18 @@ namespace LibTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Material material = new Material(richTextBox1.Text);                       
+            Animation animation = new Animation(richTextBox1.Text);
+            //Index index = new Index(richTextBox1.Text);
+            //Material material = new Material(richTextBox1.Text);
+            //Mesh mesh = new Mesh(richTextBox1.Text);
+            //Skeleton skeleton = new Skeleton(richTextBox1.Text);           
 
-            richTextBox2.Text = material.GetMapTextureName();
+            List<XElement> nodes = animation.GetKeyFrames();
+
+            foreach(XElement node in nodes)
+            {
+                richTextBox2.AppendText(node + Environment.NewLine);
+            }
         }
     }
 }
