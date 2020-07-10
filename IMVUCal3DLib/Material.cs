@@ -16,9 +16,23 @@ namespace IMVUCal3DLib
         }
 
         /// <summary>
-        /// Get the name of the texture asigned to the map
+        /// Gets the material node
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The material node</returns>
+        public XElement GetMaterial()
+        {
+            XElement material = Common.GetNodesByName(Document, "material", true).FirstOrDefault();
+
+            if (material == null)
+                return null;
+
+            return material;
+        }
+
+        /// <summary>
+        /// Gets the name of the texture asigned to the map
+        /// </summary>
+        /// <returns>A texture file name</returns>
         public string GetMapTextureName()
         {
             XElement map = Common.GetNodesByName(Document, "map", true).FirstOrDefault();
